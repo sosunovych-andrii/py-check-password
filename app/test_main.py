@@ -22,4 +22,6 @@ from app.main import check_password
     ]
 )
 def test_check_password(password: str, expected: bool) -> None:
-    assert check_password(password) == expected
+    assert check_password(password) == expected, (
+        "Password isn`t correct"
+    )
